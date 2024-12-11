@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a.active {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Single Page Application Layout</h1>
+</header>
+<nav>
+    <a href="#" class="nav-link active" data-target="home">Home</a>
+    <a href="#" class="nav-link" data-target="about">About</a>
+    <a href="#" class="nav-link" data-target="contact">Contact</a>
+</nav>
+<main>
+    <div id="home" class="page active">
+        <h2>Willkommen auf der Startseite</h2>
+        <p>Dies ist der Inhalt der Home-Seite.</p>
+    </div>
+    <div id="about" class="page">
+        <h2>Über uns</h2>
+        <p>Dies ist der Inhalt der About-Seite.</p>
+    </div>
+    <div id="contact" class="page">
+        <h2>Kontakt</h2>
+        <p>Dies ist der Inhalt der Kontakt-Seite.</p>
+    </div>
+</main>
+<script>
+    const links = document.querySelectorAll('.nav-link');
+    const pages = document.querySelectorAll('.page');
+
+    links.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+
+            // Update active link
+            links.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+
+            // Show the corresponding page
+            const target = link.getAttribute('data-target');
+            pages.forEach(page => {
+                page.classList.remove('active');
+                if (page.id === target) {
+                    page.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

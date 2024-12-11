@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>E-Commerce Product Grid</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Rasterlayout zur Darstellung von Produkten, das ideal für Online-Shops ist. Jedes Produkt enthält ein Bild, einen Namen, einen Preis und eine Schaltfläche zum Hinzufügen in den Warenkorb.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+            <div style="background-color: white; padding: 16px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+                <img src="https://via.placeholder.com/150" alt="Produkt 1" style="width: 100%; height: auto;">
+                <h3>Produkt 1</h3>
+                <p>€19,99</p>
+                <button style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">In den Warenkorb</button>
+            </div>
+            <div style="background-color: white; padding: 16px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+                <img src="https://via.placeholder.com/150" alt="Produkt 2" style="width: 100%; height: auto;">
+                <h3>Produkt 2</h3>
+                <p>€29,99</p>
+                <button style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">In den Warenkorb</button>
+            </div>
+            <div style="background-color: white; padding: 16px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+                <img src="https://via.placeholder.com/150" alt="Produkt 3" style="width: 100%; height: auto;">
+                <h3>Produkt 3</h3>
+                <p>€39,99</p>
+                <button style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">In den Warenkorb</button>
+            </div>
+            <div style="background-color: white; padding: 16px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+                <img src="https://via.placeholder.com/150" alt="Produkt 4" style="width: 100%; height: auto;">
+                <h3>Produkt 4</h3>
+                <p>€49,99</p>
+                <button style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">In den Warenkorb</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;"&gt;
+    &lt;div style="background-color: white; padding: 16px; border: 1px solid #ddd; border-radius: 8px; text-align: center;"&gt;
+        &lt;img src="https://via.placeholder.com/150" alt="Produkt 1" style="width: 100%; height: auto;"&gt;
+        &lt;h3&gt;Produkt 1&lt;/h3&gt;
+        &lt;p&gt;€19,99&lt;/p&gt;
+        &lt;button style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;"&gt;In den Warenkorb&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div style="background-color: white; padding: 16px; border: 1px solid #ddd; border-radius: 8px; text-align: center;"&gt;
+        &lt;img src="https://via.placeholder.com/150" alt="Produkt 2" style="width: 100%; height: auto;"&gt;
+        &lt;h3&gt;Produkt 2&lt;/h3&gt;
+        &lt;p&gt;€29,99&lt;/p&gt;
+        &lt;button style="background-color: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;"&gt;In den Warenkorb&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Dieses Layout ist optimal für die Präsentation von Produkten in einem Online-Shop. Es bietet eine klare und ansprechende Struktur, die den Benutzern das Durchsuchen und Auswählen von Artikeln erleichtert.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

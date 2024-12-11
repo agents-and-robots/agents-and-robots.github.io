@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Layout (Magazin-Stil)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Magazine Layout (Magazin-Stil)</h1>
+</header>
+<main style="padding: 16px; background-color: #ecf0f1;">
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout, das verschiedene Inhalte in einem Magazin-ähnlichen Stil anordnet. Ideal für Nachrichtenportale oder Online-Magazine.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div style="display: grid; grid-template-areas:
+                'header header'
+                'main sidebar'
+                'footer footer';
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto auto auto;
+                gap: 16px;">
+            <div style="grid-area: header; background-color: #f0f8ff; padding: 16px;">
+                <h2>Top Artikel</h2>
+                <p>Ein kurzer Überblick über die wichtigsten Nachrichten.</p>
+            </div>
+            <div style="grid-area: main; background-color: #faebd7; padding: 16px;">
+                <h3>Hauptinhalt</h3>
+                <p>Ein ausführlicher Artikel oder ein Bericht.</p>
+            </div>
+            <div style="grid-area: sidebar; background-color: #e6e6fa; padding: 16px;">
+                <h3>Sidebar</h3>
+                <p>Links, kurze Infos oder Werbung.</p>
+            </div>
+            <div style="grid-area: footer; background-color: #ffe4e1; padding: 16px;">
+                <h3>Weitere Artikel</h3>
+                <p>Zusätzliche Inhalte oder Verweise auf andere Seiten.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div style=&quot;display: grid; grid-template-areas:
+    'header header'
+    'main sidebar'
+    'footer footer';
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 16px;&quot;&gt;
+    &lt;div style=&quot;grid-area: header; background-color: #f0f8ff; padding: 16px;&quot;&gt;
+        &lt;h2&gt;Top Artikel&lt;/h2&gt;
+        &lt;p&gt;Ein kurzer Überblick über die wichtigsten Nachrichten.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;grid-area: main; background-color: #faebd7; padding: 16px;&quot;&gt;
+        &lt;h3&gt;Hauptinhalt&lt;/h3&gt;
+        &lt;p&gt;Ein ausführlicher Artikel oder ein Bericht.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;grid-area: sidebar; background-color: #e6e6fa; padding: 16px;&quot;&gt;
+        &lt;h3&gt;Sidebar&lt;/h3&gt;
+        &lt;p&gt;Links, kurze Infos oder Werbung.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;grid-area: footer; background-color: #ffe4e1; padding: 16px;&quot;&gt;
+        &lt;h3&gt;Weitere Artikel&lt;/h3&gt;
+        &lt;p&gt;Zusätzliche Inhalte oder Verweise auf andere Seiten.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Magazine Layout bietet eine strukturierte Ansicht für vielseitige Inhalte. Es eignet sich besonders für Webseiten, die viele Artikel und Informationen auf ansprechende Weise präsentieren möchten.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

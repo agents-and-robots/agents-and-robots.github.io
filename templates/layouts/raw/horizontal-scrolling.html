@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrolling Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 16px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+        .scroll-item {
+            display: inline-block;
+            width: 200px;
+            margin-right: 16px;
+            background-color: #e6e6fa;
+            text-align: center;
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Horizontal Scrolling Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout, das horizontales Scrollen ermöglicht, um Inhalte in einer Reihe anzuzeigen. Ideal für Galerien, Produktvorschauen oder Artikelübersichten.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div class="scroll-container">
+            <div class="scroll-item">Item 1</div>
+            <div class="scroll-item">Item 2</div>
+            <div class="scroll-item">Item 3</div>
+            <div class="scroll-item">Item 4</div>
+            <div class="scroll-item">Item 5</div>
+            <div class="scroll-item">Item 6</div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div class="scroll-container"&gt;
+    &lt;div class="scroll-item"&gt;Item 1&lt;/div&gt;
+    &lt;div class="scroll-item"&gt;Item 2&lt;/div&gt;
+    &lt;div class="scroll-item"&gt;Item 3&lt;/div&gt;
+    &lt;div class="scroll-item"&gt;Item 4&lt;/div&gt;
+    &lt;div class="scroll-item"&gt;Item 5&lt;/div&gt;
+    &lt;div class="scroll-item"&gt;Item 6&lt;/div&gt;
+&lt;/div&gt;
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.scroll-item {
+    display: inline-block;
+    width: 200px;
+    margin-right: 16px;
+    background-color: #e6e6fa;
+    text-align: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Horizontal Scrolling Layout ist ideal, um Inhalte horizontal anzuzeigen. Es ist besonders nützlich für Galerien, Slider oder Bereiche, in denen viele Elemente nebeneinander dargestellt werden sollen, ohne den vertikalen Platz zu beanspruchen.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

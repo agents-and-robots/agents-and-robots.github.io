@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Height Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Full Height Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout, das den gesamten verfügbaren vertikalen Platz ausfüllt und Inhalte zentral ausrichtet. Perfekt für Landing Pages oder wichtige Mitteilungen.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f9f9f9;">
+            <p>Inhalt ist vertikal und horizontal zentriert.</p>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Full Height Layout&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main style=&quot;height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f9f9f9;&quot;&gt;
+        &lt;p&gt;Inhalt ist vertikal und horizontal zentriert.&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Footer-Inhalt&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 16px;
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Full Height Layout eignet sich hervorragend für Designs, die Inhalte in den Fokus rücken möchten. Es ist ideal für minimalistische Designs oder Anwendungen mit zentral ausgerichteten Inhalten.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

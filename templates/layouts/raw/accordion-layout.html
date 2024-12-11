@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleAccordion(event) {
+            const content = event.currentTarget.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+    </script>
+    <style>
+        .accordion {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 14px;
+            border: 1px solid #ccc;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        .accordion:hover {
+            background-color: #ddd;
+        }
+        .accordion:after {
+            content: '\002B';
+            font-size: 20px;
+            float: right;
+        }
+        .accordion.active:after {
+            content: "\2212";
+        }
+        .panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 14px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Accordion Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein interaktives Layout, bei dem Inhalte ein- und ausgeklappt werden können. Perfekt für FAQs oder Inhalte, die kompakt dargestellt werden sollen.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div>
+            <button class="accordion" onclick="toggleAccordion(event)">Abschnitt 1</button>
+            <div class="panel">
+                <p>Inhalt des ersten Abschnitts.</p>
+            </div>
+            <button class="accordion" onclick="toggleAccordion(event)">Abschnitt 2</button>
+            <div class="panel">
+                <p>Inhalt des zweiten Abschnitts.</p>
+            </div>
+            <button class="accordion" onclick="toggleAccordion(event)">Abschnitt 3</button>
+            <div class="panel">
+                <p>Inhalt des dritten Abschnitts.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;button class="accordion" onclick="toggleAccordion(event)"&gt;Abschnitt 1&lt;/button&gt;
+&lt;div class="panel"&gt;
+    &lt;p&gt;Inhalt des ersten Abschnitts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;button class="accordion" onclick="toggleAccordion(event)"&gt;Abschnitt 2&lt;/button&gt;
+&lt;div class="panel"&gt;
+    &lt;p&gt;Inhalt des zweiten Abschnitts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;button class="accordion" onclick="toggleAccordion(event)"&gt;Abschnitt 3&lt;/button&gt;
+&lt;div class="panel"&gt;
+    &lt;p&gt;Inhalt des dritten Abschnitts.&lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Verwendetes JavaScript</h2>
+        <pre><code>
+function toggleAccordion(event) {
+    const content = event.currentTarget.nextElementSibling;
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Accordion Layout ist ideal, um Inhalte kompakt und interaktiv zu präsentieren. Benutzer können durch Klicken auf Überschriften zusätzliche Inhalte ein- oder ausblenden, was es besonders für FAQs, Anleitungen oder ähnliche Inhalte geeignet macht.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

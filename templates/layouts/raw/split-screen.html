@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen (Geteilter Bildschirm)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Split Screen (Geteilter Bildschirm)</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout, bei dem der Bildschirm in zwei gleichgroße Hälften geteilt wird, ideal für Vergleiche oder Inhalte mit zwei Schwerpunkten.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div style="display: flex; height: 100vh;">
+            <div style="flex: 1; background-color: #f0f8ff; display: flex; justify-content: center; align-items: center;">
+                <p>Linke Seite</p>
+            </div>
+            <div style="flex: 1; background-color: #faebd7; display: flex; justify-content: center; align-items: center;">
+                <p>Rechte Seite</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div style=&quot;display: flex; height: 100vh;&quot;&gt;
+    &lt;div style=&quot;flex: 1; background-color: #f0f8ff; display: flex; justify-content: center; align-items: center;&quot;&gt;
+        &lt;p&gt;Linke Seite&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;flex: 1; background-color: #faebd7; display: flex; justify-content: center; align-items: center;&quot;&gt;
+        &lt;p&gt;Rechte Seite&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Split-Screen-Layout eignet sich hervorragend, um zwei gleich wichtige Inhalte nebeneinander zu präsentieren, wie z. B. Vergleiche, doppelte Call-to-Actions oder visuelle Kontraste.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

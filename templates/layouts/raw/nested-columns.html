@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Columns Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .nested-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nested-row {
+            display: flex;
+            gap: 16px;
+        }
+        .nested-column {
+            flex: 1;
+            background-color: #e6e6fa;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Nested Columns Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout, das verschachtelte Spalten innerhalb von Zeilen unterstützt. Ideal für komplexe Layouts mit mehreren Ebenen.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div class="nested-container">
+            <div class="nested-row">
+                <div class="nested-column">Spalte 1</div>
+                <div class="nested-column">Spalte 2</div>
+            </div>
+            <div class="nested-row">
+                <div class="nested-column">
+                    <p>Spalte 1 mit weiteren verschachtelten Spalten:</p>
+                    <div class="nested-row">
+                        <div class="nested-column">Inner 1</div>
+                        <div class="nested-column">Inner 2</div>
+                    </div>
+                </div>
+                <div class="nested-column">Spalte 2</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div class="nested-container"&gt;
+    &lt;div class="nested-row"&gt;
+        &lt;div class="nested-column"&gt;Spalte 1&lt;/div&gt;
+        &lt;div class="nested-column"&gt;Spalte 2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="nested-row"&gt;
+        &lt;div class="nested-column"&gt;
+            &lt;p&gt;Spalte 1 mit weiteren verschachtelten Spalten:&lt;/p&gt;
+            &lt;div class="nested-row"&gt;
+                &lt;div class="nested-column"&gt;Inner 1&lt;/div&gt;
+                &lt;div class="nested-column"&gt;Inner 2&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nested-column"&gt;Spalte 2&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+.nested-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nested-row {
+    display: flex;
+    gap: 16px;
+}
+
+.nested-column {
+    flex: 1;
+    background-color: #e6e6fa;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Nested Columns Layout ist ideal für komplexe Designs, die Spalten in mehreren Hierarchieebenen erfordern. Es ermöglicht die Erstellung von verschachtelten Strukturen, die flexibel und leicht anpassbar sind.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

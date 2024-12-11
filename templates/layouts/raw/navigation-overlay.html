@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c3e50;
+            color: white;
+            overflow: hidden;
+        }
+        .overlay {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .overlay-content {
+            text-align: center;
+        }
+        .overlay-content a {
+            display: block;
+            margin: 16px 0;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+        .overlay-content a:hover {
+            text-decoration: underline;
+        }
+        .nav-button {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<button class="nav-button" onclick="toggleOverlay()">Menü öffnen</button>
+<div class="overlay" id="navOverlay">
+    <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <button class="nav-button" onclick="toggleOverlay()">Schließen</button>
+    </div>
+</div>
+<script>
+    function toggleOverlay() {
+        const overlay = document.getElementById('navOverlay');
+        overlay.classList.toggle('open');
+    }
+</script>
+</body>
+</html>

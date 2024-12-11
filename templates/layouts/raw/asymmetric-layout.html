@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asymmetric Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Asymmetric Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout mit asymmetrischen Spalten, das sich hervorragend für moderne Designs eignet, um den visuellen Fokus auf bestimmte Inhalte zu lenken.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div style="display: flex; max-width: 800px; margin: 0 auto; border: 1px solid #ccc;">
+            <div style="flex: 2; background-color: #f0f8ff; padding: 16px; border-right: 1px solid #ccc;">
+                <h3>Große Spalte</h3>
+                <p>Diese Spalte nimmt doppelt so viel Platz ein wie die andere.</p>
+            </div>
+            <div style="flex: 1; background-color: #faebd7; padding: 16px;">
+                <h3>Kleine Spalte</h3>
+                <p>Diese Spalte nimmt weniger Platz ein und eignet sich für sekundäre Inhalte.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div style=&quot;display: flex; max-width: 800px; margin: 0 auto;&quot;&gt;
+    &lt;div style=&quot;flex: 2; background-color: #f0f8ff; padding: 16px; border-right: 1px solid #ccc;&quot;&gt;
+        &lt;h3&gt;Große Spalte&lt;/h3&gt;
+        &lt;p&gt;Diese Spalte nimmt doppelt so viel Platz ein wie die andere.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;flex: 1; background-color: #faebd7; padding: 16px;&quot;&gt;
+        &lt;h3&gt;Kleine Spalte&lt;/h3&gt;
+        &lt;p&gt;Diese Spalte nimmt weniger Platz ein und eignet sich für sekundäre Inhalte.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<style>
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+    .large-column {
+        flex: 2;
+        background-color: #f0f8ff;
+        padding: 16px;
+        border-right: 1px solid #ccc;
+    }
+    .small-column {
+        flex: 1;
+        background-color: #faebd7;
+        padding: 16px;
+    }
+</style>
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Asymmetric Layout ist ideal, um Inhalte visuell hervorzuheben. Die größere Spalte kann für Hauptinhalte verwendet werden, während die kleinere Spalte sekundäre Informationen oder Navigationselemente enthält.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

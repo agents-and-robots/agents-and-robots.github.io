@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Footer Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+            padding: 16px;
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Fixed Footer Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout mit einem fixierten Fußbereich, der immer am unteren Rand des Bildschirms bleibt. Ideal für Webseiten mit kurzen Inhalten, die eine konstante Navigation oder Informationen im Footer benötigen.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div style="max-width: 800px; margin: 0 auto; border: 1px solid #ccc; padding: 16px;">
+            <p>Dies ist der Hauptinhalt der Seite. Scrollen Sie, um den fixierten Footer am unteren Bildschirmrand zu sehen.</p>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Fixed Footer Layout&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;p&gt;Dies ist der Hauptinhalt.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Dies ist der fixierte Footer.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+main {
+    flex: 1;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Fixed Footer Layout eignet sich besonders für Webseiten, die wichtige Informationen oder Navigationselemente im Footer unterbringen möchten. Der Footer bleibt immer sichtbar, selbst bei kurzen Seiteninhalten.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

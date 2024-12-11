@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Sticky Navigation (Kopfzeile mit fixer Navigation)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header style="position: sticky; top: 0; background-color: #2c3e50; color: white; padding: 16px; z-index: 1000;">
+    <h1>Header with Sticky Navigation</h1>
+    <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+            <li style="margin-right: 16px;"><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+            <li style="margin-right: 16px;"><a href="#" style="color: white; text-decoration: none;">Über uns</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main style="padding: 16px; background-color: #ecf0f1;">
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout mit einer fixierten Kopfzeile, die beim Scrollen sichtbar bleibt. Ideal für Navigationsmenüs oder Branding.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <p>Scrollen Sie nach unten, um die fixierte Navigation zu sehen.</p>
+        <div style="height: 2000px; padding: 16px;">
+            <p>Dies ist ein Beispieltext, der genügend Höhe bietet, um das Scrollverhalten zu demonstrieren.</p>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;header style=&quot;position: sticky; top: 0; background-color: #2c3e50; color: white; padding: 16px; z-index: 1000;&quot;&gt;
+    &lt;h1&gt;Header with Sticky Navigation&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul style=&quot;display: flex; list-style: none; margin: 0; padding: 0;&quot;&gt;
+            &lt;li style=&quot;margin-right: 16px;&quot;&gt;&lt;a href=&quot;#&quot; style=&quot;color: white; text-decoration: none;&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li style=&quot;margin-right: 16px;&quot;&gt;&lt;a href=&quot;#&quot; style=&quot;color: white; text-decoration: none;&quot;&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; style=&quot;color: white; text-decoration: none;&quot;&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main style=&quot;padding: 16px; background-color: #ecf0f1;&quot;&gt;
+    &lt;p&gt;Scrollen Sie nach unten, um die fixierte Navigation zu sehen.&lt;/p&gt;
+    &lt;div style=&quot;height: 2000px; padding: 16px;&quot;&gt;
+        &lt;p&gt;Dies ist ein Beispieltext, der genügend Höhe bietet, um das Scrollverhalten zu demonstrieren.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+            </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Die Sticky Navigation ist eine effektive Möglichkeit, wichtige Menüpunkte jederzeit zugänglich zu machen. Sie eignet sich besonders gut für lange Seiten oder Webanwendungen mit häufigem Navigationsbedarf.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

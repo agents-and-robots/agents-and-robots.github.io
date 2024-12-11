@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            border-right: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .content {
+            flex: 1;
+            padding: 16px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h2>Sticky Sidebar</h2>
+    <p>Diese Seitenleiste bleibt beim Scrollen sichtbar.</p>
+    <nav>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="content">
+    <header>
+        <h1>Sticky Sidebar Layout</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Kurzbeschreibung</h2>
+            <p>Ein Layout mit einer haftenden Seitenleiste, die beim Scrollen sichtbar bleibt, während der Hauptinhalt daneben scrollt.</p>
+        </section>
+        <section>
+            <h2>Beispiel</h2>
+            <p>Scrollen Sie, um zu sehen, wie die Seitenleiste an ihrer Position bleibt, während der Hauptinhalt scrollt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt, urna nec laoreet scelerisque, elit eros tempor magna, a vestibulum elit ipsum a nunc. Suspendisse potenti. Vivamus auctor massa et risus sollicitudin, ut feugiat arcu facilisis. Donec vel facilisis eros. Proin vel massa id turpis tincidunt fermentum. Curabitur vehicula metus ac lacus fermentum vehicula. Phasellus sit amet nisi ut nisl elementum tincidunt. Nam interdum risus vitae nunc sagittis, a suscipit libero tristique.</p>
+        </section>
+        <section>
+            <h2>HTML und CSS</h2>
+            <pre><code>
+&lt;div class="sidebar"&gt;
+    &lt;h2&gt;Sticky Sidebar&lt;/h2&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Sticky Sidebar Layout&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Kurzbeschreibung&lt;/h2&gt;
+            &lt;p&gt;Ein Layout mit einer haftenden Seitenleiste.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+&lt;/div&gt;
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+}
+.content {
+    flex: 1;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+            </code></pre>
+        </section>
+        <section>
+            <h2>Beschreibung</h2>
+            <p>Das Sticky Sidebar Layout eignet sich ideal für Dokumentationen, Menüs oder Navigationen, die immer sichtbar sein sollen. Es verbessert die Benutzerfreundlichkeit und reduziert die Notwendigkeit, nach oben zu scrollen, um zur Navigation zurückzukehren.</p>
+        </section>
+    </main>
+</div>
+</body>
+</html>

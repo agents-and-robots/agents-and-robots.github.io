@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            padding: 20px 0;
+            max-width: 600px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #ccc;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            margin: 20px 0;
+        }
+        .timeline-item-left,
+        .timeline-item-right {
+            width: 45%;
+            padding: 10px;
+            background-color: #e6e6fa;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+        .timeline-item-left {
+            left: 0;
+            transform: translateX(-110%);
+        }
+        .timeline-item-right {
+            right: 0;
+            transform: translateX(110%);
+        }
+        .timeline-item-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #007BFF;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Timeline Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout, das Ereignisse oder Schritte in chronologischer Reihenfolge entlang einer Linie anzeigt. Ideal für Lebensläufe, Projektpläne oder historische Darstellungen.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div class="timeline">
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-item-dot"></div>
+                <p>Ereignis 1</p>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-item-dot"></div>
+                <p>Ereignis 2</p>
+            </div>
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-item-dot"></div>
+                <p>Ereignis 3</p>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-item-dot"></div>
+                <p>Ereignis 4</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div class="timeline"&gt;
+    &lt;div class="timeline-item timeline-item-left"&gt;
+        &lt;div class="timeline-item-dot"&gt;&lt;/div&gt;
+        &lt;p&gt;Ereignis 1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="timeline-item timeline-item-right"&gt;
+        &lt;div class="timeline-item-dot"&gt;&lt;/div&gt;
+        &lt;p&gt;Ereignis 2&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 600px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+}
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Timeline Layout ist eine effektive Methode, um Ereignisse in einer klaren und visuell ansprechenden Form darzustellen. Es eignet sich hervorragend für Lebensläufe, Projektpläne oder historische Ereignisse.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

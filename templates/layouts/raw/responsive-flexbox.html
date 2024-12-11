@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px;
+            background-color: #f9f9f9;
+        }
+        .flex-item {
+            flex: 1 1 calc(33.333% - 16px);
+            background-color: #e6e6fa;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .flex-item {
+                flex: 1 1 calc(50% - 16px);
+            }
+        }
+        @media (max-width: 480px) {
+            .flex-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Responsive Flexbox Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein flexibles und responsives Layout, das mit Flexbox erstellt wurde. Es passt sich dynamisch an verschiedene Bildschirmgrößen an.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div class="flex-container">
+            <div class="flex-item">Element 1</div>
+            <div class="flex-item">Element 2</div>
+            <div class="flex-item">Element 3</div>
+            <div class="flex-item">Element 4</div>
+            <div class="flex-item">Element 5</div>
+            <div class="flex-item">Element 6</div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div class="flex-container"&gt;
+    &lt;div class="flex-item"&gt;Element 1&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Element 2&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Element 3&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Element 4&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Element 5&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Element 6&lt;/div&gt;
+&lt;/div&gt;
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+.flex-item {
+    flex: 1 1 calc(33.333% - 16px);
+    background-color: #e6e6fa;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+@media (max-width: 480px) {
+    .flex-item {
+        flex: 1 1 100%;
+    }
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Responsive Flexbox Layout ist vielseitig und einfach anpassbar. Mit Flexbox können Inhalte gleichmäßig verteilt und responsiv gestaltet werden. Es eignet sich ideal für Galerien, Produktanzeigen oder dynamische Layouts.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>

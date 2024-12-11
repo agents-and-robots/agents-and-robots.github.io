@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Layout-Katalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 16px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .card h2 {
+            margin: 16px 0 8px;
+        }
+        .card p {
+            margin: 0 0 16px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Layout-Katalog</h1>
+    <p>Eine Sammlung vielseitiger HTML-Layouts für Ihre Projekte.</p>
+</header>
+<main>
+    <div class="card">
+        <h2>One Column</h2>
+        <p>Eine einfache Seite mit einer einzigen Spalte.</p>
+        <a href="one-column.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Two Column - Left Sidebar</h2>
+        <p>Eine Seite mit zwei Spalten und einer linken Seitenleiste.</p>
+        <a href="two-column-left-sidebar.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Two Column - Right Sidebar</h2>
+        <p>Eine Seite mit zwei Spalten und einer rechten Seitenleiste.</p>
+        <a href="two-column-right-sidebar.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Two Column - Equal Width</h2>
+        <p>Zwei gleich breite Spalten für Inhalte.</p>
+        <a href="two-column-equal-width.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Three Columns</h2>
+        <p>Ein Layout mit drei gleich breiten Spalten.</p>
+        <a href="three-columns.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Header and Footer</h2>
+        <p>Eine Seite mit Kopf- und Fußzeile.</p>
+        <a href="header-footer.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Header, Content, and Footer</h2>
+        <p>Kopfzeile, Inhaltsbereich und Fußzeile.</p>
+        <a href="header-content-footer.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Grid Layout</h2>
+        <p>Ein flexibles Layout basierend auf CSS-Grid.</p>
+        <a href="grid-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Centered Content</h2>
+        <p>Ein zentrierter Inhaltsbereich.</p>
+        <a href="centered-content.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Split Screen</h2>
+        <p>Ein Layout mit geteiltem Bildschirm.</p>
+        <a href="split-screen.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Full-Width Hero</h2>
+        <p>Ein Hero-Bereich, der die gesamte Breite einnimmt.</p>
+        <a href="full-width-hero.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Card Layout</h2>
+        <p>Ein Layout mit Kacheln für Inhalte.</p>
+        <a href="card-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Sidebar Navigation</h2>
+        <p>Eine Navigation in der Seitenleiste.</p>
+        <a href="sidebar-navigation.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Header with Sticky Navigation</h2>
+        <p>Ein Layout mit fixer Kopfzeile und Navigation.</p>
+        <a href="header-sticky-navigation.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Masonry Layout</h2>
+        <p>Ein Pinterest-ähnliches Layout.</p>
+        <a href="masonry-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Dashboard Layout</h2>
+        <p>Ein Layout für Dashboards.</p>
+        <a href="dashboard-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Blog Layout</h2>
+        <p>Ein Layout im Blog-Stil.</p>
+        <a href="blog-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Portfolio Layout</h2>
+        <p>Ein stilvolles Layout für Portfolios.</p>
+        <a href="portfolio-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Gallery Layout</h2>
+        <p>Ein Layout für Galerien.</p>
+        <a href="gallery-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Magazine Layout</h2>
+        <p>Ein Layout im Magazin-Stil.</p>
+        <a href="magazine-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Landing Page</h2>
+        <p>Ein Layout für Landingpages.</p>
+        <a href="landing-page.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>E-Commerce Product Grid</h2>
+        <p>Ein Layout für Produktübersichten.</p>
+        <a href="ecommerce-product-grid.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Fullscreen Layout</h2>
+        <p>Ein Layout, das den gesamten Bildschirm einnimmt.</p>
+        <a href="fullscreen-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Tabbed Interface</h2>
+        <p>Ein Layout mit Registerkarten.</p>
+        <a href="tabbed-interface.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Accordion Layout</h2>
+        <p>Ein Akkordeon-Stil-Layout.</p>
+        <a href="accordion-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Sidebar with Dropdown Menu</h2>
+        <p>Eine Seitenleiste mit Dropdown-Menü.</p>
+        <a href="sidebar-dropdown-menu.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Horizontal Scrolling Layout</h2>
+        <p>Ein Layout mit horizontalem Scrollen.</p>
+        <a href="horizontal-scrolling.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Timeline Layout</h2>
+        <p>Ein Layout für Zeitachsen.</p>
+        <a href="timeline-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Chat Interface</h2>
+        <p>Ein Layout für Chat-Oberflächen.</p>
+        <a href="chat-interface.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Nested Columns</h2>
+        <p>Ein Layout mit verschachtelten Spalten.</p>
+        <a href="nested-columns.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Fixed Footer Layout</h2>
+        <p>Ein Layout mit fixiertem Fußbereich.</p>
+        <a href="fixed-footer.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Responsive Flexbox Layout</h2>
+        <p>Ein flexibles Layout mit Flexbox.</p>
+        <a href="responsive-flexbox.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Sticky Sidebar Layout</h2>
+        <p>Ein Layout mit haftender Seitenleiste.</p>
+        <a href="sticky-sidebar.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Full-Height Layout</h2>
+        <p>Ein Layout, das die gesamte Höhe ausnutzt.</p>
+        <a href="full-height-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Split Header Layout</h2>
+        <p>Ein Layout mit geteiltem Kopfbereich.</p>
+        <a href="split-header.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Asymmetric Layout</h2>
+        <p>Ein asymmetrisches Layout für kreative Designs.</p>
+        <a href="asymmetric-layout.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Cover Page Layout</h2>
+        <p>Ein Deckblatt-Layout für Landingpages.</p>
+        <a href="cover-page.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>Navigation Overlay Layout</h2>
+        <p>Ein Overlay-Layout für Navigationen.</p>
+        <a href="navigation-overlay.html">Ansehen</a>
+    </div>
+    <div class="card">
+        <h2>SPA Layout</h2>
+        <p>Ein Layout für Single-Page-Applications.</p>
+        <a href="spa-layout.html">Ansehen</a>
+    </div>
+</main>
+</body>
+</html>

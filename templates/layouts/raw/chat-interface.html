@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 500px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 16px;
+            background-color: #f9f9f9;
+        }
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 16px;
+        }
+        .chat-message {
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+        .chat-message.sent {
+            align-self: flex-end;
+            background-color: #d1e7dd;
+        }
+        .chat-message.received {
+            align-self: flex-start;
+            background-color: #f8d7da;
+        }
+        .chat-input {
+            display: flex;
+        }
+        .chat-input textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+        .chat-input button {
+            margin-left: 8px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Chat Interface Layout</h1>
+</header>
+<main>
+    <section>
+        <h2>Kurzbeschreibung</h2>
+        <p>Ein Layout für eine einfache Chat-Benutzeroberfläche mit Nachrichtenanzeige und Eingabefeld. Ideal für Anwendungen mit Echtzeit-Kommunikation.</p>
+    </section>
+    <section>
+        <h2>Beispiel</h2>
+        <div class="chat-container">
+            <div class="chat-messages">
+                <div class="chat-message sent">Hallo, wie kann ich helfen?</div>
+                <div class="chat-message received">Ich hätte eine Frage zum Layout.</div>
+                <div class="chat-message sent">Gern, worum geht es?</div>
+            </div>
+            <div class="chat-input">
+                <textarea placeholder="Nachricht eingeben..."></textarea>
+                <button>Senden</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>HTML und CSS</h2>
+        <pre><code>
+&lt;div class="chat-container"&gt;
+    &lt;div class="chat-messages"&gt;
+        &lt;div class="chat-message sent"&gt;Hallo, wie kann ich helfen?&lt;/div&gt;
+        &lt;div class="chat-message received"&gt;Ich hätte eine Frage zum Layout.&lt;/div&gt;
+        &lt;div class="chat-message sent"&gt;Gern, worum geht es?&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="chat-input"&gt;
+        &lt;textarea placeholder="Nachricht eingeben..."&gt;&lt;/textarea&gt;
+        &lt;button&gt;Senden&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+}
+.chat-message.sent {
+    align-self: flex-end;
+    background-color: #d1e7dd;
+}
+.chat-message.received {
+    align-self: flex-start;
+    background-color: #f8d7da;
+}
+        </code></pre>
+    </section>
+    <section>
+        <h2>Beschreibung</h2>
+        <p>Das Chat Interface Layout bietet eine einfache Struktur für Chat-Anwendungen. Es enthält einen scrollbaren Nachrichtenbereich und ein Eingabefeld für Nachrichten. Die Gestaltung kann leicht angepasst werden, um verschiedene Chat-Stile zu unterstützen.</p>
+    </section>
+</main>
+<footer>
+    <p><a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+</body>
+</html>
